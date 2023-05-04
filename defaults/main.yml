@@ -1,0 +1,33 @@
+# Standards: 1.2
+---
+# @var jsonnet_core_version:description: Version of jsonnet binary to install
+# renovate: datasource=github-releases depName=google/go-jsonnet
+jsonnet_core_version: 0.20.0
+
+# @var jsonnet_core_arch:description: Architecture for jsonnet binary
+jsonnet_core_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'x86_64' }}"
+
+# @var jsonnet_core_download:description: URL to download jsonnet binary from
+jsonnet_core_download: "https://github.com/google/go-jsonnet/releases/download/v{{ jsonnet_core_version }}/go-jsonnet_{{ jsonnet_core_version }}_Linux_{{ jsonnet_core_arch }}.tar.gz"
+
+# @var jsonnet_core_includes:description: List of binaries to include
+jsonnet_core_includes:
+  - jsonnet
+  - jsonnet-deps
+  - jsonnet-lint
+  - jsonnetfmt
+
+# @var jsonnet_bundler_version:description: Version of jsonnet bundler to install
+# renovate: datasource=github-releases depName=jsonnet-bundler/jsonnet-bundler
+jsonnet_bundler_version: 0.5.1
+
+# @var jsonnet_bundler_arch:description: Architecture for jsonnet bundler
+jsonnet_bundler_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
+
+# @var jsonnet_bundler_download:description: URL to download jsonnet bundler from
+jsonnet_bundler_download: "https://github.com/jsonnet-bundler/jsonnet-bundler/releases/download/v{{ jsonnet_bundler_version }}/jb-linux-{{ jsonnet_bundler_arch }}"
+
+# @var jsonnet_install_path:description: Path to install the binaries
+jsonnet_install_path: /usr/bin
+
+...

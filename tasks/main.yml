@@ -1,0 +1,25 @@
+# Standards: 1.2
+---
+- name: Download jsonnet release
+  unarchive:
+    src: "{{ jsonnet_core_download }}"
+    dest: "{{ jsonnet_install_path }}"
+    include: "{{ jsonnet_core_includes }}"
+    remote_src: True
+    owner: root
+    group: root
+    mode: u=rwx,g=rx,o=rx
+  tags:
+    - jsonnet
+
+- name: Download bundler release
+  get_url:
+    url: '{{ jsonnet_bundler_download }}'
+    dest: "{{ jsonnet_install_path }}/jb"
+    owner: root
+    group: root
+    mode: u=rwx,g=rx,o=rx
+  tags:
+    - jsonnet
+
+...
