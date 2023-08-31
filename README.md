@@ -1,6 +1,6 @@
 # jsonnet
 
-[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&amp;logoColor=white)](https://github.com/rolehippie/jsonnet)
+[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/jsonnet)
 [![General Workflow](https://github.com/rolehippie/jsonnet/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/jsonnet/actions/workflows/general.yml)
 [![Readme Workflow](https://github.com/rolehippie/jsonnet/actions/workflows/docs.yml/badge.svg)](https://github.com/rolehippie/jsonnet/actions/workflows/docs.yml)
 [![Galaxy Workflow](https://github.com/rolehippie/jsonnet/actions/workflows/galaxy.yml/badge.svg)](https://github.com/rolehippie/jsonnet/actions/workflows/galaxy.yml)
@@ -36,7 +36,6 @@ Building and improving this Ansible role have been sponsored by my current and p
 
 - Minimum Ansible version: `2.10`
 
-
 ## Default Variables
 
 ### jsonnet_bundler_arch
@@ -46,8 +45,8 @@ Architecture for jsonnet bundler
 #### Default value
 
 ```YAML
-jsonnet_bundler_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64'\
-  \ }}"
+jsonnet_bundler_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64'
+  }}"
 ```
 
 ### jsonnet_bundler_download
@@ -78,8 +77,8 @@ Architecture for jsonnet binary
 #### Default value
 
 ```YAML
-jsonnet_core_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'x86_64'\
-  \ }}"
+jsonnet_core_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'x86_64'
+  }}"
 ```
 
 ### jsonnet_core_download
