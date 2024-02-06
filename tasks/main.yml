@@ -1,7 +1,6 @@
-# Standards: 1.2
 ---
 - name: Download jsonnet release
-  unarchive:
+  ansible.builtin.unarchive:
     src: "{{ jsonnet_core_download }}"
     dest: "{{ jsonnet_install_path }}"
     include: "{{ jsonnet_core_includes }}"
@@ -13,7 +12,7 @@
     - jsonnet
 
 - name: Download bundler release
-  get_url:
+  ansible.builtin.get_url:
     url: '{{ jsonnet_bundler_download }}'
     dest: "{{ jsonnet_install_path }}/jb"
     owner: root
