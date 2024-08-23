@@ -67,7 +67,7 @@ Version of jsonnet bundler to install
 #### Default value
 
 ```YAML
-jsonnet_bundler_version: 0.5.1
+jsonnet_bundler_version: 0.6.0
 ```
 
 ### jsonnet_core_arch
