@@ -18,7 +18,7 @@ jsonnet_core_includes:
 
 # @var jsonnet_bundler_version:description: Version of jsonnet bundler to install
 # renovate: datasource=github-releases depName=jsonnet-bundler/jsonnet-bundler
-jsonnet_bundler_version: 0.5.1
+jsonnet_bundler_version: 0.6.0
 
 # @var jsonnet_bundler_arch:description: Architecture for jsonnet bundler
 jsonnet_bundler_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
