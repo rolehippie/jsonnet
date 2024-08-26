@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/rolehippie/jsonnet/compare/v2.0.0...v2.1.0) (2024-08-26)
+
+
+### Features
+
+* **deps:** update dependency jsonnet-bundler/jsonnet-bundler to v0.6.0 ([50f613e](https://github.com/rolehippie/jsonnet/commit/50f613e141e9331518c981a71ad7639688c54bae))
+
 ## [2.0.0](https://github.com/rolehippie/jsonnet/compare/v1.0.0...v2.0.0) (2024-02-12)
 
 
