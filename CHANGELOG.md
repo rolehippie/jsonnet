@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/rolehippie/jsonnet/compare/v2.1.0...v2.2.0) (2025-05-12)
+
+
+### Features
+
+* **deps:** update dependency google/go-jsonnet to v0.21.0 ([#17](https://github.com/rolehippie/jsonnet/issues/17)) ([fd85b99](https://github.com/rolehippie/jsonnet/commit/fd85b99aeb28ce400f0aa2c400fbf0851f7fb206))
+
 ## [2.1.0](https://github.com/rolehippie/jsonnet/compare/v2.0.0...v2.1.0) (2024-08-26)
 
 
