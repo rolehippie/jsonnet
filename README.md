@@ -1,4 +1,4 @@
-# jsonnet
+# workspace
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/jsonnet)
 [![General Workflow](https://github.com/rolehippie/jsonnet/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/jsonnet/actions/workflows/general.yml)
@@ -56,7 +56,8 @@ URL to download jsonnet bundler from
 #### Default value
 
 ```YAML
-jsonnet_bundler_download: https://github.com/jsonnet-bundler/jsonnet-bundler/releases/download/v{{
+jsonnet_bundler_download: 
+  https://github.com/jsonnet-bundler/jsonnet-bundler/releases/download/v{{ 
   jsonnet_bundler_version }}/jb-linux-{{ jsonnet_bundler_arch }}
 ```
 
@@ -88,7 +89,8 @@ URL to download jsonnet binary from
 #### Default value
 
 ```YAML
-jsonnet_core_download: https://github.com/google/go-jsonnet/releases/download/v{{
+jsonnet_core_download: 
+  https://github.com/google/go-jsonnet/releases/download/v{{ 
   jsonnet_core_version }}/go-jsonnet_Linux_{{ jsonnet_core_arch }}.tar.gz
 ```
 
@@ -129,7 +131,6 @@ jsonnet_install_path: /usr/bin
 ## Discovered Tags
 
 **_jsonnet_**
-
 
 ## Dependencies
 
