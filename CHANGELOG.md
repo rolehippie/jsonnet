@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/rolehippie/jsonnet/compare/v2.2.0...v2.3.0) (2025-09-29)
+
+
+### Features
+
+* apply new repo structure and update linting and integrate noble ([ee99ff0](https://github.com/rolehippie/jsonnet/commit/ee99ff0f3207326037909cfaecb1acb33262d863))
+
 ## [2.2.0](https://github.com/rolehippie/jsonnet/compare/v2.1.0...v2.2.0) (2025-05-12)
 
 
