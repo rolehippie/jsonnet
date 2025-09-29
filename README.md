@@ -1,4 +1,4 @@
-# workspace
+# jsonnet
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/jsonnet)
 [![General Workflow](https://github.com/rolehippie/jsonnet/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/jsonnet/actions/workflows/general.yml)
@@ -45,8 +45,8 @@ Architecture for jsonnet bundler
 #### Default value
 
 ```YAML
-jsonnet_bundler_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64'
-  }}"
+jsonnet_bundler_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture
+  == 'arm64' else 'amd64' }}"
 ```
 
 ### jsonnet_bundler_download
@@ -78,8 +78,8 @@ Architecture for jsonnet binary
 #### Default value
 
 ```YAML
-jsonnet_core_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'x86_64'
-  }}"
+jsonnet_core_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture
+  == 'arm64' else 'x86_64' }}"
 ```
 
 ### jsonnet_core_download

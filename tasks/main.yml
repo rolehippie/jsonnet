@@ -4,7 +4,7 @@
     src: "{{ jsonnet_core_download }}"
     dest: "{{ jsonnet_install_path }}"
     include: "{{ jsonnet_core_includes }}"
-    remote_src: True
+    remote_src: true
     owner: root
     group: root
     mode: u=rwx,g=rx,o=rx
