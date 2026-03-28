@@ -79,7 +79,7 @@ Architecture for jsonnet binary
 
 ```YAML
 jsonnet_core_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture
-  == 'arm64' else 'x86_64' }}"
+  == 'arm64' else 'amd64' }}"
 ```
 
 ### jsonnet_core_download
@@ -91,7 +91,8 @@ URL to download jsonnet binary from
 ```YAML
 jsonnet_core_download: 
   https://github.com/google/go-jsonnet/releases/download/v{{ 
-  jsonnet_core_version }}/go-jsonnet_Linux_{{ jsonnet_core_arch }}.tar.gz
+  jsonnet_core_version }}/go-jsonnet_{{ jsonnet_core_version }}_linux_{{ 
+  jsonnet_core_arch }}.tar.gz
 ```
 
 ### jsonnet_core_includes
@@ -115,7 +116,7 @@ Version of jsonnet binary to install
 #### Default value
 
 ```YAML
-jsonnet_core_version: 0.21.0
+jsonnet_core_version: 0.22.0
 ```
 
 ### jsonnet_install_path
