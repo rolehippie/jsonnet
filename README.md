@@ -45,8 +45,7 @@ Architecture for jsonnet bundler
 #### Default value
 
 ```YAML
-jsonnet_bundler_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture
-  == 'arm64' else 'amd64' }}"
+jsonnet_bundler_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture == 'arm64' else 'amd64' }}"
 ```
 
 ### jsonnet_bundler_download
@@ -56,9 +55,7 @@ URL to download jsonnet bundler from
 #### Default value
 
 ```YAML
-jsonnet_bundler_download: 
-  https://github.com/jsonnet-bundler/jsonnet-bundler/releases/download/v{{ 
-  jsonnet_bundler_version }}/jb-linux-{{ jsonnet_bundler_arch }}
+jsonnet_bundler_download: https://github.com/jsonnet-bundler/jsonnet-bundler/releases/download/v{{ jsonnet_bundler_version }}/jb-linux-{{ jsonnet_bundler_arch }}
 ```
 
 ### jsonnet_bundler_version
@@ -78,8 +75,7 @@ Architecture for jsonnet binary
 #### Default value
 
 ```YAML
-jsonnet_core_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture
-  == 'arm64' else 'amd64' }}"
+jsonnet_core_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture == 'arm64' else 'amd64' }}"
 ```
 
 ### jsonnet_core_download
@@ -89,10 +85,7 @@ URL to download jsonnet binary from
 #### Default value
 
 ```YAML
-jsonnet_core_download: 
-  https://github.com/google/go-jsonnet/releases/download/v{{ 
-  jsonnet_core_version }}/go-jsonnet_{{ jsonnet_core_version }}_linux_{{ 
-  jsonnet_core_arch }}.tar.gz
+jsonnet_core_download: https://github.com/google/go-jsonnet/releases/download/v{{ jsonnet_core_version }}/go-jsonnet_{{ jsonnet_core_version }}_linux_{{ jsonnet_core_arch }}.tar.gz
 ```
 
 ### jsonnet_core_includes
