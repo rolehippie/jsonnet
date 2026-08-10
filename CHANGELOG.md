@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.6.0](https://github.com/rolehippie/jsonnet/compare/v2.5.0...v2.6.0) (2026-08-10)
+
+### Dependencies
+
+* **minor:** update dependency pipx:ansible-doctor to v8.4.0 ([#51](https://github.com/rolehippie/jsonnet/issues/51)) ([0006280](https://github.com/rolehippie/jsonnet/commit/0006280333473559f98640f3267d244db96808c9))
+* **patch:** update dependency python to v3.14.7 ([#49](https://github.com/rolehippie/jsonnet/issues/49)) ([49c4f7c](https://github.com/rolehippie/jsonnet/commit/49c4f7ccef3cf054cab48a7599db667cf17bea1b))
+
 ## [2.5.0](https://github.com/rolehippie/jsonnet/compare/v2.4.0...v2.5.0) (2026-07-27)
 
 ## [2.4.0](https://github.com/rolehippie/jsonnet/compare/v2.3.0...v2.4.0) (2026-04-06)
