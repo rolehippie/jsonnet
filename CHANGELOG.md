@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.7.0](https://github.com/rolehippie/jsonnet/compare/v2.6.0...v2.7.0) (2026-08-17)
+
+### Dependencies
+
+* **minor:** update dependency pipx:ansible-lint to v26.8.0 ([#54](https://github.com/rolehippie/jsonnet/issues/54)) ([eb9aa1e](https://github.com/rolehippie/jsonnet/commit/eb9aa1e92a7f3d727f0e2022b60568165a0ea841))
+* **minor:** update dependency pipx:molecule to v26.8.0 ([#55](https://github.com/rolehippie/jsonnet/issues/55)) ([9ebcfa0](https://github.com/rolehippie/jsonnet/commit/9ebcfa0aec0fea53a4993373bd2f145b7258b086))
+* **patch:** update dependency pipx:ansible-core to v2.21.3 ([#52](https://github.com/rolehippie/jsonnet/issues/52)) ([448210e](https://github.com/rolehippie/jsonnet/commit/448210eb20055cac73e86dfa5430f4871b3e56ea))
+* **patch:** update dependency pre-commit to v4.6.2 ([#53](https://github.com/rolehippie/jsonnet/issues/53)) ([25d2111](https://github.com/rolehippie/jsonnet/commit/25d2111b6bb5c2441967a0a5f30fed2dd46f2436))
+
 ## [2.6.0](https://github.com/rolehippie/jsonnet/compare/v2.5.0...v2.6.0) (2026-08-10)
 
 ### Dependencies
