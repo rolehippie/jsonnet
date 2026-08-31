@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.7.1](https://github.com/rolehippie/jsonnet/compare/v2.7.0...v2.7.1) (2026-08-31)
+
+### Dependencies
+
+* **patch:** update dependency pipx:ansible-doctor to v8.4.1 ([#56](https://github.com/rolehippie/jsonnet/issues/56)) ([c80e8ae](https://github.com/rolehippie/jsonnet/commit/c80e8aecb7272cd5f7b0121d9212bce7db33ffd6))
+
 ## [2.7.0](https://github.com/rolehippie/jsonnet/compare/v2.6.0...v2.7.0) (2026-08-17)
 
 ### Dependencies
