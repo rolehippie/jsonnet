@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.8.0](https://github.com/rolehippie/jsonnet/compare/v2.7.1...v2.8.0) (2026-09-07)
+
+### Features
+
+* add separate requirements for molecule run ([ba83327](https://github.com/rolehippie/jsonnet/commit/ba83327b8f2282dd6c623405334b8bb023661ef0))
+* use new required facts as attributes ([6a2954b](https://github.com/rolehippie/jsonnet/commit/6a2954bebf97d86bbb215f7e527d8e218bfd8b9e))
+
 ## [2.7.1](https://github.com/rolehippie/jsonnet/compare/v2.7.0...v2.7.1) (2026-08-31)
 
 ### Dependencies
